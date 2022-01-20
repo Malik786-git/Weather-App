@@ -8,12 +8,12 @@ function apifun() {
     
     // let url = `${weatherApi.baseUrl}?q=Mumbai&appid=${weatherApi.key}`;
  
-    fetch(`${weatherApi.baseUrl}?q=London&appid=${weatherApi.key}`)
+    fetch(`${weatherApi.baseUrl}?q=karachi&appid=${weatherApi.key}`)
     .then(res =>res.json())
     .then(UpdateUi)
 }
 apifun();
 
 function UpdateUi(data) {
-    console.log(data);
+    console.log(Math.floor( data.main.temp-273.15));
 }

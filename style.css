@@ -4,6 +4,46 @@
     padding: 0;
 }
 body{
+    background: wheat;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+.wrapped{
+    display: flex;
+    justify-content: center;
+   
+}
+.container{
+    margin-top: 150px;
+    height: 600px;
+    width: 400px;
+    background: rgb(34, 74, 148);
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    -webkit-box-shadow: -1px 0px 16px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 0px 16px 3px rgba(0,0,0,0.75);
+    box-shadow: -1px 0px 16px 3px rgba(0,0,0,0.75);
+}
+h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 45px;
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
