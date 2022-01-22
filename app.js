@@ -26,9 +26,11 @@ btn.onclick = ()=>{
 }
 
 function UpdateUi(data) {
-     document.getElementById('container').innerHTML = `
+    var iconurl = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
+   
+    document.getElementById('container').innerHTML = `
      <h1>🙔 Weather</h1>
-     <i class="fa fa-cloud icon" aria-hidden="true"></i>
+     <img src="${iconurl}" alt="img" id="icon">
      <small id="main">${data.weather[0].main}</small>
      <div class="temp_details">
          <small>Min ${Math.floor(data.main.temp_max-273)}&#186;C</small>
@@ -36,4 +38,8 @@ function UpdateUi(data) {
          <small>Min ${Math.floor(data.main.temp_min-273)}&#186;C</small>
      </div>
          <h2>${data.name}, ${data.sys.country}</h2>`;
+         
+        //  document.write(iconurl)
 }
+
+
