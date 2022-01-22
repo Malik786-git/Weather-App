@@ -4,17 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="wrapped">
-        <div class="container">
-            <h1>Weather App</h1>
-            <img src="" alt="" srcset="" id="icon">
+        <div class="search">
+            <input type="search" id="search" placeholder="Search here">
+            <i class="fa fa-search" id="btn" aria-hidden="true"></i>
+        </div>
+        <div class="container" id="container">
+            <h1>🙔 Weather</h1>
+
+            <i class="fa fa-cloud icon" aria-hidden="true"></i>
+            <small id="main">---</small>
+            <div class="temp_details">
+                <small>Min -&#186;C</small>
+                <h2>-&#186;C</h2>
+                <small>Min -&#186;C</small>
+            </div>
+                <h2>-----, --</h2>
         </div>
     </div>
 
     <script src="app.js"></script>
 </body>
 </html>
+
+
